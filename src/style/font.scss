@@ -1,0 +1,616 @@
+@font-face {
+  font-family: NotoSansTC;
+  src: local(NotoSansTC-Regular),
+    url(../font/NotoSansTC/NotoSansTC-Regular.otf) format("woff2"),
+    url(../font/NotoSansTC/NotoSansTC-Regular.otf) format("woff"),
+    url(../font/NotoSansTC/NotoSansTC-Regular.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  src: local(NotoSansTC-Medium),
+    url(../font/NotoSansTC/NotoSansTC-Medium.otf) format("woff2"),
+    url(../font/NotoSansTC/NotoSansTC-Medium.otf) format("woff"),
+    url(../font/NotoSansTC/NotoSansTC-Medium.otf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  src: local(NotoSansTC-Bold),
+    url(../font/NotoSansTC/NotoSansTC-Bold.otf) format("woff2"),
+    url(../font/NotoSansTC/NotoSansTC-Bold.otf) format("woff"),
+    url(../font/NotoSansTC/NotoSansTC-Bold.otf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: local(Montserrat-Regular),
+    url(../font/Montserrat/Montserrat-Regular.ttf) format("woff2"),
+    url(../font/Montserrat/Montserrat-Regular.ttf) format("woff"),
+    url(../font/Montserrat/Montserrat-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: local(Montserrat-Medium),
+    url(../font/Montserrat/Montserrat-Medium.ttf) format("woff2"),
+    url(../font/Montserrat/Montserrat-Medium.ttf) format("woff"),
+    url(../font/Montserrat/Montserrat-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: local(Montserrat-Bold),
+    url(../font/Montserrat/Montserrat-Bold.ttf) format("woff2"),
+    url(../font/Montserrat/Montserrat-Bold.ttf) format("woff"),
+    url(../font/Montserrat/Montserrat-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@mixin Noto-Sans-TCLarge-Title703-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.81px;
+}
+
+@mixin Noto-Sans-TCLarge-Title663-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 66px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: 0.76px;
+}
+@mixin Noto-Sans-TCLarge-Title623-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 62px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: 0.71px;
+}
+@mixin Noto-Sans-TCLarge-Title603-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.69px;
+}
+@mixin Noto-Sans-TCLarge-Title563-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: 0.76px;
+}
+@mixin Noto-Sans-TCLarge-Title523-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 52px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: 0.71px;
+}
+@mixin Noto-Sans-TCLarge-Title503-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.68px;
+}
+@mixin Noto-Sans-TCLarge-Title463-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 46px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.62px;
+}
+@mixin Noto-Sans-TCLarge-Title423-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: 0.57px;
+}
+@mixin Noto-Sans-TCLarge-Title403-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+}
+@mixin Noto-Sans-TCLarge-Title363-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: 0.35px;
+}
+@mixin Noto-Sans-TCLarge-Title343-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.24;
+  letter-spacing: 0.33px;
+}
+@mixin Noto-Sans-TCLarge-Title323-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.31px;
+}
+@mixin Noto-Sans-TCTitle283-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: 0.28px;
+}
+@mixin Noto-Sans-TCTitle243-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 0.24px;
+}
+@mixin Noto-Sans-TCTitle203-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+@mixin Noto-Sans-TCCallout203-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: 0.11px;
+}
+@mixin Noto-Sans-TCCallout202-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: 0.11px;
+}
+@mixin Noto-Sans-TCBody202-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: 0.11px;
+}
+@mixin Noto-Sans-TCCallout201-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: 0.11px;
+}
+@mixin Noto-Sans-TCBody201-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: 0.11px;
+}
+@mixin Noto-Sans-TCTitle183-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: 0.18px;
+}
+@mixin Noto-Sans-TCCallout183-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 0.09px;
+}
+@mixin Noto-Sans-TCCallout182-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 0.09px;
+}
+@mixin Noto-Sans-TCBody182-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 0.09px;
+}
+@mixin Noto-Sans-TCCallout181-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 0.09px;
+}
+@mixin Noto-Sans-TCBody181-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 0.09px;
+}
+@mixin Noto-Sans-TCCallout173-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: 0.09px;
+}
+@mixin Noto-Sans-TCCallout172-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: 0.08px;
+}
+@mixin Noto-Sans-TCBody172-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: 0.08px;
+}
+@mixin Noto-Sans-TCCallout171-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: 0.08px;
+}
+@mixin Noto-Sans-TCBody171-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: 0.08px;
+}
+@mixin Noto-Sans-TCTitle163-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.16px;
+}
+@mixin Noto-Sans-TCCallout163-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.69;
+  letter-spacing: 0.07px;
+}
+@mixin Noto-Sans-TCCallout162-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.69;
+  letter-spacing: 0.07px;
+}
+@mixin Noto-Sans-TCBody162-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.69;
+  letter-spacing: 0.07px;
+}
+@mixin Noto-Sans-TCCallout161-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.69;
+  letter-spacing: 0.07px;
+}
+@mixin Noto-Sans-TCBody161-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.69;
+  letter-spacing: 0.07px;
+}
+@mixin Noto-Sans-TCCallout153-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.73;
+  letter-spacing: 0.06px;
+}
+@mixin Noto-Sans-TCFootnote152-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -0.06px;
+}
+@mixin Noto-Sans-TCCallout152-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.73;
+  letter-spacing: 0.06px;
+}
+@mixin Noto-Sans-TCBody152-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.73;
+  letter-spacing: 0.06px;
+}
+@mixin Noto-Sans-TCFootnote151-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: -0.06px;
+}
+@mixin Noto-Sans-TCCallout151-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.73;
+  letter-spacing: 0.06px;
+}
+@mixin Noto-Sans-TCBody151-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.73;
+  letter-spacing: 0.06px;
+}
+@mixin Noto-Sans-TCCallout143-Bold {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: 0.05px;
+}
+@mixin Noto-Sans-TCFootnote142-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.05px;
+}
+@mixin Noto-Sans-TCCallout142-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: 0.05px;
+}
+@mixin Noto-Sans-TCBody142-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: 0.05px;
+}
+@mixin Noto-Sans-TCFootnote141-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.05px;
+}
+@mixin Noto-Sans-TCCallout141-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: 0.05px;
+}
+@mixin Noto-Sans-TCBody141-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: 0.05px;
+}
+@mixin Noto-Sans-TCCaption132-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.46;
+  letter-spacing: 0.2px;
+}
+@mixin Noto-Sans-TCCaption131-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.46;
+  letter-spacing: 0.4px;
+}
+@mixin Noto-Sans-TCCaption122-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+}
+@mixin Noto-Sans-TCCaption121-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+}
+@mixin Noto-Sans-TCCaption102-Medium {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.1px;
+}
+@mixin Noto-Sans-TCCaption101-Regular {
+  font-family: NotoSansTC, sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.1px;
+}
+
+@mixin Montserrat-Medium {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.1px;
+}
+@mixin Montserrat-Semi-Bold {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 29px;
+  letter-spacing: 0.1px;
+}
+@mixin Montserrat-Bold {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 29px;
+  letter-spacing: 0.1px;
+}

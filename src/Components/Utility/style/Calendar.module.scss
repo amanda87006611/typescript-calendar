@@ -1,0 +1,155 @@
+@import "../../../style/main.scss";
+
+.events {
+  @include Noto-Sans-TCCaption101-Regular;
+  border-radius: 3px;
+  color: $gs-007;
+  margin: 3px 5px;
+  padding: 2px 5px;
+  cursor: pointer;
+  max-height: 25px;
+  display: flex;
+  align-items: center;
+  @include Noto-Sans-TCCaption122-Medium;
+  .spot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+  }
+}
+
+.changeMonth {
+  margin: 0px 20px;
+}
+
+.navigation {
+  @include Noto-Sans-TCFootnote152-Medium;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: $gs-007;
+  border-radius: 5px;
+  padding: 3px 8px;
+  .navIcon {
+    font-size: 27px;
+    margin: 0 2px;
+    color: $gs-005;
+  }
+  &:hover {
+    background: $gs-002;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.currentMonth {
+  margin-left: 24px;
+  font-size: 24px;
+}
+
+.weekContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  &:nth-child(1) {
+    border-top: none;
+    border-right: none;
+  }
+  &:nth-child(2) {
+    margin-top: 10px;
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    border-radius: 6px 6px 0 0;
+    .weekWrapper {
+      &:nth-child(-n + 7) {
+        border-right: 1px solid #e8e8e8;
+        padding: 5px 7px;
+      }
+      &:nth-child(7) {
+        border-top-right-radius: 6px;
+      }
+    }
+    .day {
+      font-weight: 300;
+    }
+  }
+  &:nth-child(3) {
+    border-left: 1px solid #e8e8e8;
+    border-top: none;
+    border-right: none;
+  }
+}
+
+.dayContainer {
+  &:nth-child(-n + 42) {
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  max-width: 100%;
+  height: 150px;
+  min-height: 100px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.day {
+  @include Montserrat-Medium;
+  margin: 5px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $gs-007;
+  font-size: 15px;
+}
+
+.weekNames {
+  color: #666666;
+  cursor: default;
+}
+
+.inactiveDay {
+  color: $gs-003;
+  pointer-events: none;
+}
+
+.today {
+  @include Montserrat-Medium;
+  color: $gs-000;
+  background: $green-003;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.selectedDay {
+  @include Montserrat-Medium;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.navIcon:hover {
+  border-radius: 50%;
+  background: #efefee;
+}
+
+.todayButton {
+  @include Noto-Sans-TCFootnote152-Medium;
+  cursor: pointer;
+  color: $gs-004;
+}

@@ -1,0 +1,48 @@
+@import "../../../style/main.scss";
+
+.textField {
+  @include Noto-Sans-TCCallout161-Regular;
+  width: 100%;
+  height: 36px;
+  padding: 6px 10px;
+  background: $gs-001;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: $gs-008;
+  border: 1px solid $gs-002;
+  &:focus {
+    background: $gs-000;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  &::placeholder {
+    color: $gs-006;
+  }
+  &:hover {
+    background: $gs-002;
+  }
+}
+
+.smallTextField {
+  @include Noto-Sans-TCCallout161-Regular;
+  width: 100%;
+  height: 39px;
+  padding: 6px 10px;
+  background: $gs-001;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: $gs-008;
+  border: 1px solid $gs-002;
+  &:focus {
+    background: $gs-000;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}

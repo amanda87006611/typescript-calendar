@@ -1,0 +1,74 @@
+@import "../../style/main.scss";
+
+.todoOuter {
+  box-sizing: border-box;
+  display: flex;
+  .todoLeft {
+    width: 300px;
+    background: $gs-009;
+    height: 100vh;
+    padding: 20px;
+    .box {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      background: $gs-008;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      .category {
+        display: flex;
+        align-items: center;
+        @include Noto-Sans-TCFootnote152-Medium;
+        .square {
+          width: 8px;
+          height: 8px;
+        }
+        span {
+          color: rgba($gs-000, 0.7);
+          margin-left: 8px;
+        }
+      }
+      .boxTitle {
+        @include Montserrat-Semi-Bold;
+        font-size: 16px;
+        color: $system-questionOrange;
+      }
+      .checkboxOuter {
+        .todoBtn {
+          margin-left: 3px;
+          cursor: pointer;
+          @include Montserrat-Medium;
+          font-size: 14px;
+          font-weight: 500;
+          padding: 5px;
+          display: flex;
+          align-items: center;
+          color: rgba($gs-000, 0.7);
+          span {
+            margin-left: 8px;
+          }
+        }
+        .checkbox {
+          cursor: pointer;
+          @include Montserrat-Medium;
+          font-size: 14px;
+          font-weight: 500;
+          padding: 5px;
+          display: flex;
+          align-items: center;
+          color: rgba($gs-000, 0.7);
+          svg {
+            font-size: 20px;
+          }
+          span {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+  }
+  .todoRight {
+    width: calc(100% - 300px);
+    padding: 50px;
+  }
+}
