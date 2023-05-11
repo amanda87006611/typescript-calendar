@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://amanda87006611.github.io/ts-calendar",
+  "homepage": "https://amanda87006611.github.io/typescript-calendar",
   "dependencies": {
     "@fontsource/montserrat": "^4.5.14",
     "@reduxjs/toolkit": "^1.9.5",
