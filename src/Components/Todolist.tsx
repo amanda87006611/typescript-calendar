@@ -4,7 +4,7 @@ import styles from "./style/todo.module.scss";
 // import axios from "axios";
 
 import TextField from "./Utility/TextField";
-// import Calendar from "./Utility/Calendar";
+import Calendar from "./Utility/Calendar";
 
 import { BsPlusSquare } from "react-icons/bs";
 import { MdCheckBoxOutlineBlank, MdCheckBox } from "react-icons/md";
@@ -151,7 +151,7 @@ const Todolist = () => {
         />
         <button onClick={() => handleSendApi()}>送出</button>
         <span>{response}</span>
-        {/* <Calendar events={events} categories={categories} /> */}
+        <Calendar events={events} categories={categories} />
       </div>
     </div>
   );
