@@ -8,18 +8,18 @@ import Calendar from "./Utility/Calendar";
 
 import { BsPlusSquare } from "react-icons/bs";
 import { MdCheckBoxOutlineBlank, MdCheckBox } from "react-icons/md";
-import { Configuration, OpenAIApi } from "openai";
+// import { Configuration, OpenAIApi } from "openai";
 
 const Todolist = () => {
   const [todoValue, setTodoValue] = useState<any>("");
-  const [response, setResponse] = useState<any>("");
+  const [response] = useState<any>("");
 
   // const [lineNotifyPosts, setLineNotifyPosts] = useState([]);
 
-  const configuration = new Configuration({
-    organization: "org-oDyMYE9LdXp6PMWOetgRsC2Q",
-    apiKey: "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",
-  });
+  // const configuration = new Configuration({
+  //   organization: "org-oDyMYE9LdXp6PMWOetgRsC2Q",
+  //   apiKey: "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",
+  // });
 
   // useEffect(() => {
   //   const NotifyPost = async () => {
@@ -92,19 +92,18 @@ const Todolist = () => {
   ];
 
   const handleSendApi: () => void = async () => {
-    const openai = new OpenAIApi(configuration);
-    const response = await openai.createCompletion({
-      model: "text-davinci-003",
-      prompt: todoValue,
-      temperature: 0.9,
-      max_tokens: 150,
-      top_p: 1,
-      frequency_penalty: 0.0,
-      presence_penalty: 0.6,
-      stop: [" Human:", " AI:"],
-    });
-
-    setResponse(response?.data?.choices[0]?.text);
+    // const openai = new OpenAIApi(configuration);
+    // const response = await openai.createCompletion({
+    //   model: "text-davinci-003",
+    //   prompt: todoValue,
+    //   temperature: 0.9,
+    //   max_tokens: 150,
+    //   top_p: 1,
+    //   frequency_penalty: 0.0,
+    //   presence_penalty: 0.6,
+    //   stop: [" Human:", " AI:"],
+    // });
+    // setResponse(response?.data?.choices[0]?.text);
   };
 
   return (
